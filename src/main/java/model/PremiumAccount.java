@@ -8,7 +8,7 @@ public class PremiumAccount implements BankTransaction {
 
     private BigDecimal balance;
     private AccountOwner accountOwner;
-    private BigDecimal maxDebit = new BigDecimal(-10000);
+    private BigDecimal maxDebit;
 
     public void takeDebit(BigDecimal howMuch){
         System.out.println("Chcesz wziążć debet w wysokości " + howMuch + "PLN. Trwa sprawdzanie dostępnych środków...");
